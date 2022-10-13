@@ -1,0 +1,49 @@
+:host{
+    display: flex;
+    justify-content: space-between;
+    padding: calc(20rem / 16) 0;
+}
+.pokemon{
+    position: relative;
+    display: flex;
+    width: calc(49% - 40px);
+    height: calc(157 / 16rem);
+    background-color: var(--branco);
+    padding: calc(20rem / 16);
+    border-radius: 8px;
+}
+.pokemon__status h2{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.pokemon__status ul{
+    display: flex;
+    flex-direction: column;
+}
+.pokemon__status ul li{
+    background-color: var(--cinza);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    width: 60px;
+    margin-bottom: 5px;
+}
+.pokemon__img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(90rem / 16);
+    width: calc(90rem / 16);
+    right: calc(20rem / 16);
+    bottom: calc(10rem / 16);
+    background: url(../../../assets/bg/background-list-pokemons.svg) no-repeat;
+}
+.pokemon__img img{
+    width: 80;
+    height: 80;
+}
