@@ -1,11 +1,15 @@
-:host{
+.listagem{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: calc(20rem / 16) 0;
 }
 .pokemon{
     position: relative;
     display: flex;
+    text-decoration: none;
+    color: var(--secundary-color);
+    margin-bottom: 10px;
     width: calc(49% - 40px);
     height: calc(157 / 16rem);
     background-color: var(--branco);
@@ -16,6 +20,7 @@
     font-size: 25px;
     font-style: italic;
     font-weight: 700;
+    text-transform: capitalize;
     margin-bottom: 10px;
 }
 .pokemon__status ul{
@@ -37,13 +42,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(90rem / 16);
-    width: calc(90rem / 16);
+    height: calc(80rem / 16);
+    width: calc(80rem / 16);
     right: calc(20rem / 16);
     bottom: calc(10rem / 16);
-    background: url(../../../assets/bg/background-list-pokemons.svg) no-repeat;
+    background: url(../../../assets/bg/bg.png) no-repeat left;
+    background-size: calc(80rem / 16);
 }
 .pokemon__img img{
-    width: 80;
-    height: 80;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 500px){
+    .listagem{
+        flex-direction: column;
+    }
+    .pokemon{
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+    }
 }
